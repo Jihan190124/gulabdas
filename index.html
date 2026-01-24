@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="products.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -55,55 +56,7 @@
         <h2 class="section-title">New Arrivals</h2>
         <p class="section-subtitle">Fresh additions to our curated collection</p>
       </div>
-      <div class="products-grid">
-        <article class="product-card animate-on-scroll">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1503944168849-c1246463e59b?w=600&h=800&fit=crop" alt="Pink Princess Dress">
-            <div class="product-overlay">
-              <a href="https://wa.me/+91 8160819720?text=Hi! I'm interested in the Pink Princess Dress" class="btn btn-whatsapp" target="_blank">Check on WhatsApp</a>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Pink Princess Dress</h3>
-            <p class="product-price">₹1,200</p>
-          </div>
-        </article>
-        <article class="product-card animate-on-scroll">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop" alt="Charcoal Wool Blazer">
-            <div class="product-overlay">
-              <a href="https://wa.me/+91 8160819720?text=Hi! I'm interested in the Charcoal Wool Blazer" class="btn btn-whatsapp" target="_blank">Check on WhatsApp</a>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Charcoal Wool Blazer</h3>
-            <p class="product-price">₹12,000</p>
-          </div>
-        </article>
-        <article class="product-card animate-on-scroll">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1503944168849-c1246463e59b?w=600&h=800&fit=crop" alt="Yellow Summer Dress">
-            <div class="product-overlay">
-              <a href="https://wa.me/+91 8160819720?text=Hi! I'm interested in the Yellow Summer Dress" class="btn btn-whatsapp" target="_blank">Check on WhatsApp</a>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Yellow Summer Dress</h3>
-            <p class="product-price">₹950</p>
-          </div>
-        </article>
-        <article class="product-card animate-on-scroll">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=800&fit=crop" alt="Beige Linen Trousers">
-            <div class="product-overlay">
-              <a href="https://wa.me/+91 8160819720?text=Hi! I'm interested in the Beige Linen Trousers" class="btn btn-whatsapp" target="_blank">Check on WhatsApp</a>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Beige Linen Trousers</h3>
-            <p class="product-price">₹3,200</p>
-          </div>
-        </article>
+      <div class="products-grid" id="newArrivalsGrid">
       </div>
       <div class="section-cta">
         <a href="catalog.html" class="btn btn-outline">View All Products</a>
@@ -182,7 +135,7 @@
           <div class="visit-hours">
             <p><strong>Monday - Sunday:</strong> 11:00 AM - 9:00 PM</p>
           </div>
-          <a href="https://wa.me/+91 8160819720" class="btn btn-primary" target="_blank">
+          <a href="https://wa.me/918160819720" class="btn btn-primary" target="_blank">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Contact on WhatsApp
           </a>
@@ -215,7 +168,7 @@
           <ul>
             <li><a href="catalog.html">Collection</a></li>
             <li><a href="#visit">Visit Store</a></li>
-            <li><a href="https://wa.me/919876543210" target="_blank">Contact</a></li>
+            <li><a href="https://wa.me/918160819720" target="_blank">Contact</a></li>
           </ul>
         </div>
         <div class="footer-social">
@@ -237,11 +190,40 @@
   </footer>
 
   <!-- Sticky WhatsApp Button -->
-  <a href="https://wa.me/+91 8160819720S" class="whatsapp-sticky" target="_blank" aria-label="Contact on WhatsApp">
+  <a href="https://wa.me/918160819720 " class="whatsapp-sticky" target="_blank" aria-label="Contact on WhatsApp">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const newArrivalsGrid = document.getElementById('newArrivalsGrid');
+      if (newArrivalsGrid) {
+        // Get first 4 products for new arrivals
+        const newArrivals = PRODUCTS.slice(0, 4);
+
+        newArrivals.forEach(product => {
+          const productCard = document.createElement('article');
+          productCard.className = 'product-card animate-on-scroll';
+
+          productCard.innerHTML = `
+            <div class="product-image">
+              <img src="${product.image}" alt="${product.name}">
+              <div class="product-overlay">
+                <a href="https://wa.me/918160819720?text=${encodeURIComponent(`Hi! I'm interested in Product ID: ${product.id} - ${product.name}`)}" class="btn btn-whatsapp" target="_blank">Check on WhatsApp</a>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">${product.name}</h3>
+              <p class="product-price">${product.price}</p>
+            </div>
+          `;
+
+          newArrivalsGrid.appendChild(productCard);
+        });
+      }
+    });
+  </script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 
 :root {
-  --color-background: #FAF9F6;
+  --color-background: #F9F5F0;
   --color-foreground: #1a1a1a;
-  --color-muted: #6b6b6b;
-  --color-accent: #8B7355;
-  --color-accent-hover: #6d5a44;
-  --color-border: #e5e5e5;
+  --color-muted: #b49c14;
+  --color-accent: #F4991A;
+  --color-accent-hover: #344F1F;
+  --color-border: #7c7e7d;
   --color-white: #ffffff;
   --color-overlay: rgba(0, 0, 0, 0.4);
   --color-whatsapp: #25D366;
