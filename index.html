@@ -199,7 +199,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const newArrivalsGrid = document.getElementById('newArrivalsGrid');
-      if (newArrivalsGrid) {
+      if (newArrivalsGrid && typeof PRODUCTS !== 'undefined') {
         // Get first 4 products for new arrivals
         const newArrivals = PRODUCTS.slice(0, 4);
 
@@ -222,6 +222,25 @@
 
           newArrivalsGrid.appendChild(productCard);
         });
+
+        // Re-observe new elements for animation
+        const newAnimatedElements = newArrivalsGrid.querySelectorAll('.animate-on-scroll');
+        const observerOptions = {
+          root: null,
+          rootMargin: '0px 0px -50px 0px',
+          threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+
+        newAnimatedElements.forEach(el => observer.observe(el));
       }
     });
   </script>
