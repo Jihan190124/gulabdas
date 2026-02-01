@@ -919,8 +919,65 @@ h1, h2, h3, h4, h5, h6 {
 .features-grid .animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
 
 /* ========================================
-   UTILITY CLASSES
+   GLASSMORPHISM STYLES
    ======================================== */
-.hidden {
-  display: none !important;
+.glass-hero {
+  background: url("https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1920&h=1080&fit=crop")
+              center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-card {
+  width: 95%;
+  height: 110%;
+  background: rgba(236, 5, 5, 0);
+  backdrop-filter: blur(50px);
+  border-radius: 28px;
+  padding: 50px 70px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.glass-nav ul {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+}
+
+/* Glass content */
+.glass-content {
+  max-width: 520px;
+  margin-top: 90px;
+}
+
+.glass-content h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  line-height: 1.1;
+}
+
+.glass-content p {
+  margin: 20px 0 30px;
+  color: rgba(255,255,255,0.85);
+}
+@media (max-width: 768px) {
+  .glass-card {
+    width: 95%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .glass-nav ul {
+    display: none;
+  }
+
+  .glass-content {
+    margin-top: 40px;
+  }
 }
